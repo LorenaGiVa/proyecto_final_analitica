@@ -21,9 +21,9 @@ st.set_page_config(layout="wide")
 st.markdown("<h1 style='text-align: center; color: #2874A6;'>Enfermedades que han afectado gravemente a Nueva York 🗽</h1>", unsafe_allow_html=True)
 
 # Cargar datos
-df0 = pd.read_csv('/content/drive/MyDrive/BD_WFINAL/covid.csv')  # base covid
-df1 = pd.read_csv('/content/drive/MyDrive/BD_WFINAL/vih.csv')  # base vih
-df2 = pd.read_csv('/content/drive/MyDrive/BD_WFINAL/causas_muertes.csv')  # base causas de muertes
+df0 = pd.read_csv('covid.csv')  # base covid
+df1 = pd.read_csv('vih.csv')  # base vih
+df2 = pd.read_csv('causas_muertes.csv')  # base causas de muertes
 
 # Tratamiento de datos 
 df0['fecha_muestra'] = pd.to_datetime(df0['fecha_muestra'])
