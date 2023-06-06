@@ -22,7 +22,7 @@ st.markdown("<h1 style='text-align: center; color: #2874A6;'>Enfermedades que ha
 
 # Cargar datos
 df0 = pd.read_csv('covid.csv')  # base covid
-df1 = pd.read_csv('vih.csv')  # base vih
+df1 = pd.read_csv('VIH.csv')  # base vih
 df2 = pd.read_csv('causas_muertes.csv')  # base causas de muertes
 
 # Tratamiento de datos 
