@@ -29,7 +29,7 @@ df2 = pd.read_csv('causas_muertes.csv')  # base causas de muertes
 df0['fecha_muestra'] = pd.to_datetime(df0['fecha_muestra'])
 df0['año'] = df0['fecha_muestra'].dt.year
 
-df1.columns = ['año', 'distritos', 'genero', 'edad', 'raza/etnia', 'diagnosticos_vih', 'tasa_diagnostico_vih', 'diagnosticos_sida', 'tasa_diagnostico_sida', 'muertes']
+df1.columns = ['año', 'distritos', 'genero', 'edad', 'raza/etnia', 'diagnosticos_vih', 'diagnosticos_sida', 'muertes']
 
 df2.columns = ['año', 'causa_de_muerte', 'genero', 'raza/etnia', 'muertes']
 df2['raza/etnia'] = df2['raza/etnia'].replace(['Non-Hispanic White', 'Non-Hispanic Black','Asian and Pacific Islander','Other Race/ Ethnicity','Not Stated/Unknown' ],
